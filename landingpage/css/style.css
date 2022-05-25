@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+}
+
+/*Start Header*/
+
+/*Start Nav Bar*/
+.navbar .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left:1rem !important;
+    padding-right:1rem !important;
+}
+
+.navbar .nav-link.active{
+    border-left:3px solid #444 ;
+}
+
+/*End Nav Bar*/
+
+
+/*End Header*/
+
+
+/*START SHOWCASE SLIDER SECTION*/
+.carousel-item{
+    height: 450px;
+}
+
+.carousel-image-1{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)), url('../assets/img/etc/cover1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-image-2{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)), url('../assets/img/etc/cover2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-image-3{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)), url('../assets/img/etc/cover3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*END SHOWCASE SLIDER SECTION*/
+
+#homeheading{
+    min-height: 200px;
+    background-image: url('../assets/img/etc/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#fff;
+    text-align: center;
+
+
+    position: relative;
+}
+
+.darkoverlays{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.7);
+
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+
+#videoplay{
+    min-height: 200px;
+    background-image: url('../assets/img/etc/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -300px;
+    color:#fff;
+    text-align: center;
+
+
+    position: relative;
+}
+
+#videoplay a{
+    color:#fff;
+}
+
+
+/*START PAGE HEADER*/
+#pageheader{
+    height: 200px;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)), url('./../assets/img/etc/background.jpg');
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color:#fff;
+    border-bottom: 1px solid #eee;
+    padding-top:50px;
+}
+
+.aboutimages{
+    margin-top:-50px;
+}
+/*END PAGE HEADER*/
+
+
+
+/*START TESTIMONIALS*/
+
+.testimonial-container{
+    color:#fff;
+
+    position:relative;
+}
+
+.fa-quote{
+    color:rgba(255,255,255,0.3);
+    font-size: 28px;
+    position: absolute;
+    top:40px;
+}
+.fa-quote-right{
+    left: 0;
+}
+
+.fa-quote-left{
+    right: 0;
+}
+
+.testimonial{
+    line-height: 28px;
+}
+
+.company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company .company-details{
+    margin-left: 10px;
+}
+
+.company .companyname{
+    margin:0;
+}
+
+.company .role{
+    font-weight: normal;
+    /*top&bottom left&right*/
+    margin: 10px 0;
+}
+
+.progress-bar{
+    width:100%;
+    height: 4px;
+    background-color: tomato;
+
+
+    /*animation: myincrement 10s linear infinite;*/
+    animation-name:myincrement;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /*left right center top bottom*/
+    transform-origin:left;
+}
+
+@keyframes myincrement {
+    0%{
+        transform: scaleX(0);
+    }
+}
+
+/*START FAQ SECTION*/
+#faq .card{
+    margin:2px 0;
+    border:none;
+}
+
+#faq a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#faq .card-header,
+#faq .card-body{
+    background:#333;
+}
+/*END FAQ SECTION*/
+
+
+/*START FOOTER SECTION*/
+#mainfooter{
+    background: #000;
+    color:#fff;
+}
+/*END FOOTER SECTION*/

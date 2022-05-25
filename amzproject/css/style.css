@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0;
+}
+
+/*Start Header*/
+
+header{
+    height: 100vh;
+    background:linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+            ),url('../assets/img/etc/cover.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+
+/*Start Nav Bar*/
+.navbar{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+    padding:20px 30px;
+
+    transition: all 0.7s;
+} /*working together with navmenus */
+
+.navmenus{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+    padding:5px 30px;
+}
+
+.menuitems{
+    color:#eeee;
+    font-size:13px;
+    letter-spacing: 1px;
+    transition: color 0.5s;
+}
+
+.menuitems:hover{
+    color:#70aed2;
+}
+
+.lines1, .lines2, .lines3{
+    width: 23px;
+    height:3px;
+    margin:5px;
+
+    transition: all 0.4s;
+}
+
+.changes .lines1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.changes .lines2{
+    opacity:0;
+}
+.changes .lines3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/*End Nav Bar*/
+
+
+
+
+/*Start Banner*/
+.banners{
+    width:80%;
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+
+    transform:translate(-50%, -50%);
+}
+
+.bannerheaders{
+    animation-name:bnanis;
+    animation-duration: 2s;
+}
+
+.bannerparagraphs{
+    animation-name:bnanis;
+    animation-duration:2s;
+    animation-delay: 0.5s;
+
+    animation-fill-mode: backwards;
+}
+
+@keyframes bnanis {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*End Banner*/
+
+/*End Header*/
+
+
+
+/*Start Mission*/
+.missions{
+    background:#151f20;
+}
+
+.underlines{
+    width: 150px;
+    border:3px;
+    border-style: solid;
+    border-color:#eee;
+    margin: auto;
+}
+
+.fromleft {
+    animation-name:fromleft;
+    animation-duration: 3s;
+}
+
+.fromright {
+    animation-name:fromright;
+    animation-duration: 3s;
+}
+
+@keyframes fromleft{
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromright{
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*End Mission*/
+
+
+/*Start Collection*/
+.cardshadows{
+    box-shadow: 5px 8px 20px #444;
+}
+
+.headings{
+    width: 70%;
+    background:#222;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 70%;
+    right:0;
+
+    opacity: 0.7;
+
+    transition: all 0.5s;
+}
+
+.headings:hover{
+    opacity: 1;
+}
+/*End Collection*/
+
+
+/*Start Gallery*/
+.darkunderlines{
+    width: 150px;
+    border:3px;
+    border-style: solid;
+    border-color: #aaa;
+    margin: auto;
+}
+
+.gallerylists{
+    color:#777;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filters{
+    transition-delay: 1s;
+}
+
+
+.activeitems{
+    color:#70aed2;
+}
+/*End Gallery*/
+
+/*Start Customers*/
+.customers{
+    background: #151f20;
+}
+/*End Customers*/
+
+/*Start Price*/
+.cardones, .cardtwos, .cardthrees{
+    max-width:400px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url(https://cdn.mos.cms.futurecdn.net/f5Y4yjCTQUctN9SGsevLRR-1200-80.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 7px 18px 50px #555;
+}
+
+.carditems{
+    border-bottom: 1px groove #eee;
+    width: 55%;
+    margin:auto;
+}
+
+.cardbuttons{
+    background: #f5593d;
+    width:130px;
+    border-radius: 25px;
+    box-shadow: 5px 8px 18px #000;
+
+    transition: all 0.2s;
+}
+
+.cardbuttons:hover{
+    background: #f9793d;
+    transform:translateY(-2px);
+}
+
+
+.movefromleft{
+    animation-name: movefromleft;
+    animation-duration:2s;
+}
+
+.movefromright{
+    animation-name: movefromright;
+    animation-duration:2s;
+}
+
+.movefrombuttom{
+    animation-name: movefrombottom;
+    animation-duration:2s;
+}
+
+
+@keyframes movefromleft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes movefromright{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes movefrombottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+/*End Price*/
+
+
+/*Start Subscribe*/
+.contacts{
+    background: linear-gradient(
+        105deg,
+        rgba(21,31,32,1) 0%,
+        rgba(21,31,32,0.95) 50%,
+        transparent 50%
+        ) , url('./../assets/img/etc/lady.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.inputs{
+
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    transition: all 0.8s;
+
+    color:white;
+}
+
+.inputs:focus{
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #f5593d;
+    color:#fff;
+}
+
+.submitbuttons{
+    background:#f55945;
+    color:#eee;
+
+    transition: all 0.3s;
+}
+
+.submitbuttons:hover{
+    background:#f9793d;
+    transform: translateY(-3px);
+}
+
+
+.labels{
+    color:#777;
+    display:block;
+    margin-top: -60px;
+    margin-left:4px;
+    font-size:13px;
+
+    transition: all 0.3s;
+}
+
+.inputs:placeholder-shown + .labels{
+    transform: translate(20px, 20px);
+    /*opacity: 0;*/
+    visibility: hidden;
+}
+/*End Subscribe*/
+
+/*Start Footer*/
+.footerlinks{
+    color:#eee;
+    font-size: 13px;
+    text-decoration: none;
+
+    transition:  all 0.3s;
+}
+
+.footerlinks:hover{
+    color:#70aed2;
+}
+/*End Footer*/
